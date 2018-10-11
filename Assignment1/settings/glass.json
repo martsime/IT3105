@@ -1,0 +1,40 @@
+{
+  "data_source": "glass",
+  "error_function": "mse",
+  "optimizer": "adam",
+  "learning_rate": 0.005,
+  "delta_learning_rate": 0.9999,
+  "case_fraction": 1,
+  "validation_fraction": 0.1,
+  "test_fraction": 0.1,
+  "validation_interval": 50,
+  "minibatch_size": 200,
+  "map_batch_size": 10,
+  "steps": 1000,
+  "hidden_layers": [
+    {
+      "size": 16,
+      "activation": "relu"
+    },
+    {
+      "size": 6,
+      "activation": "relu"
+    }
+  ],
+  "output_layer": {
+    "activation": "softmax"
+  },
+  "visualization": {
+    "dendrograms": false,
+    "mappings": false,
+    "weights": {
+      "start": false,
+      "end": false
+    },
+    "biases": {
+      "start": false,
+      "end": false
+    },
+    "error": true
+  }
+}

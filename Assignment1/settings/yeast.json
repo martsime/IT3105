@@ -1,0 +1,54 @@
+{
+  "data_source": "yeast",
+  "error_function": "mse",
+  "optimizer": "adam",
+  "learning_rate": 10,
+  "delta_learning_rate": 0.9999,
+  "case_fraction": 1.0,
+  "validation_fraction": 0.1,
+  "test_fraction": 0.1,
+  "validation_interval": 50,
+  "minibatch_size": 500,
+  "map_batch_size": 10,
+  "steps": 2000,
+  "hidden_layers": [
+    {
+      "size": 128,
+      "activation": "relu",
+      "weights": {
+        "range": [-0.1, 0.1]
+      }
+    },
+    {
+      "size": 64,
+      "activation": "relu",
+      "weights": {
+        "range": [-0.1, 0.1]
+      }
+    },
+    {
+      "size": 20,
+      "activation": "relu",
+      "weights": {
+        "range": [-0.1, 0.1]
+      }
+    }
+  ],
+  "output_layer": {
+    "activation": "softmax"
+  },
+  "visualization": {
+    "dendrograms": false,
+    "mappings": true,
+    "weights": {
+      "start": false,
+      "end": false
+    },
+    "biases": {
+      "start": false,
+      "end": false
+    },
+    "error": true
+  },
+  "seed": false
+}

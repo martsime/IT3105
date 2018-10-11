@@ -1,0 +1,35 @@
+{
+  "data_source": "source",
+  "error_function": "mse",
+  "optimizer": "gradient",
+  "learning_rate": 1,
+  "delta_learning_rate": 1.0,
+  "case_fraction": 1.0,
+  "validation_fraction": 0.0,
+  "test_fraction": 0.0,
+  "validation_interval": 10,
+  "minibatch_size": 8,
+  "map_batch_size": 8,
+  "steps": 500,
+  "hidden_layers": [
+    {
+      "size": 3,
+      "visualize_layer": {
+        "mappings": false
+      }
+    }
+  ],
+   "visualization": {
+    "dendrograms": false,
+    "mappings": false,
+    "weights": {
+      "start": false,
+      "end": false
+    },
+    "biases": {
+      "start": false,
+      "end": false
+    },
+    "error": false
+  }
+}

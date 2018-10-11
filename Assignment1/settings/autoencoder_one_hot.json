@@ -1,0 +1,53 @@
+{
+  "data_source": "autoencoder_one_hot",
+  "error_function": "cross_entropy",
+  "optimizer": "gradient",
+  "learning_rate": 1,
+  "delta_learning_rate": 1.0,
+  "case_fraction": 1.0,
+  "validation_fraction": 0.0,
+  "test_fraction": 0.0,
+  "validation_interval": 10,
+  "minibatch_size": 8,
+  "map_batch_size": 8,
+  "steps": 500,
+  "hidden_layers": [
+    {
+      "size": 3,
+      "visualize_layer": {
+        "mappings": false,
+        "dendrograms": true,
+        "weights": {
+          "start": false,
+          "end": true
+        },
+        "biases": {
+          "start": false,
+          "end": false
+        }
+      }
+    }
+  ],
+  "output_layer": {
+    "visualize_layer": {
+      "dendrograms": true,
+      "weights": {
+        "start": false,
+        "end": true
+      }
+    }
+  },
+  "visualization": {
+    "dendrograms": false,
+    "mappings": false,
+    "error": true,
+    "weights": {
+      "start": false,
+      "end": false
+    },
+    "biases": {
+      "start": false,
+      "end": false
+    }
+  }
+}

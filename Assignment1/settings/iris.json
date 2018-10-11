@@ -1,0 +1,67 @@
+{
+  "data_source": "iris",
+  "error_function": "cross_entropy",
+  "optimizer": "gradient",
+  "learning_rate": 0.9,
+  "delta_learning_rate": 0.999,
+  "case_fraction": 1,
+  "validation_fraction": 0.1,
+  "test_fraction": 0.1,
+  "validation_interval": 50,
+  "minibatch_size": 200,
+  "map_batch_size": 16,
+  "steps": 1000,
+  "hidden_layers": [
+    {
+      "size": 2,
+      "activation": "relu",
+      "visualize_layer": {
+        "dendrograms": true,
+        "mappings": true,
+        "weights": {
+          "start": true,
+          "end": true
+        },
+        "biases": {
+          "start": true,
+          "end": true
+        }
+      }
+    }
+  ],
+  "output_layer": {
+    "activation": "softmax",
+    "visualize_layer": {
+      "dendrograms": true,
+      "mappings": true,
+      "weights": {
+        "start": true,
+        "end": true
+      },
+      "biases": {
+        "start": true,
+        "end": true
+      }
+    }
+  },
+  "input_layer": {
+    "visualize_layer": {
+      "dendrograms": true,
+      "mappings": true
+    }
+  },
+  "visualization": {
+    "dendrograms": true,
+    "mappings": true,
+    "weights": {
+      "start": true,
+      "end": true
+    },
+    "biases": {
+      "start": true,
+      "end": true
+    },
+    "error": true
+  },
+  "seed": 361
+}

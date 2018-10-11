@@ -1,0 +1,47 @@
+{
+  "data_source": "segment_counter",
+  "error_function": "cross_entropy",
+  "optimizer": "gradient",
+  "learning_rate": 2,
+  "delta_learning_rate": 1.0,
+  "case_fraction": 1.0,
+  "validation_fraction": 0.1,
+  "test_fraction": 0.1,
+  "validation_interval": 20,
+  "minibatch_size": 800,
+  "map_batch_size": 16,
+  "steps": 1000,
+  "hidden_layers": [
+    {
+      "size": 64,
+      "activation": "relu",
+      "weights": {
+        "range": [
+          -0.1,
+          0.1
+        ]
+      },
+      "visualize_layer": {
+        "mappings": true,
+        "dendrograms": false
+      }
+    }
+  ],
+  "output_layer": {
+    "activation": "softmax"
+  },
+  "visualization": {
+    "dendrograms": false,
+    "mappings": false,
+    "weights": {
+      "start": false,
+      "end": false
+    },
+    "biases": {
+      "start": false,
+      "end": false
+    },
+    "error": true
+  },
+  "seed": false
+}

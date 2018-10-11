@@ -1,0 +1,109 @@
+{
+  "data_source": false,
+  "error_function": "mse",
+  "optimizer": "gradient",
+  "learning_rate": 1,
+  "delta_learning_rate": 1.0,
+  "case_fraction": 1.0,
+  "validation_fraction": 0.1,
+  "test_fraction": 0.1,
+  "validation_interval": 10,
+  "minibatch_size": 64,
+  "map_batch_size": 10,
+  "steps": 5000,
+  "seed": 12,
+  "hidden_layers": [],
+  "testing": "classification",
+  "output_layer": {
+    "activation": "softmax",
+    "weights": {
+      "range": [
+        -0.1,
+        0.1
+      ],
+      "distribution": "uniform",
+      "standard_deviation": 1
+    },
+    "biases": {
+      "range": [
+        -0.1,
+        0.1
+      ],
+      "distribution": "uniform",
+      "standard_deviation": 1
+    },
+    "visualize_layer": {
+      "dendrograms": false,
+      "mappings": true,
+      "weights": {
+        "start": false,
+        "end": false
+      },
+      "biases": {
+        "start": false,
+        "end": false
+      }
+    }
+  },
+  "input_layer": {
+    "activation": false,
+    "normalize": false,
+    "visualize_layer": {
+      "dendrograms": false,
+      "mappings": true,
+      "weights": {
+        "start": true,
+        "end": true
+      },
+      "biases": {
+        "start": true,
+        "end": true
+      }
+    }
+  },
+  "default_layer": {
+    "size": 10,
+    "activation": "relu",
+    "weights": {
+      "range": [
+        -0.1,
+        0.1
+      ],
+      "distribution": "uniform",
+      "standard_deviation": 1
+    },
+    "biases": {
+      "range": [
+        -0.1,
+        0.1
+      ],
+      "distribution": "uniform",
+      "standard_deviation": 1
+    },
+    "visualize_layer": {
+      "dendrograms": false,
+      "mappings": false,
+      "weights": {
+        "start": false,
+        "end": false
+      },
+      "biases": {
+        "start": false,
+        "end": false
+      }
+    }
+  },
+  "visualization": {
+    "dendrograms": false,
+    "mappings": false,
+    "weights": {
+      "start": false,
+      "end": false
+    },
+    "biases": {
+      "start": false,
+      "end": false
+    },
+    "error": true
+  }
+}
